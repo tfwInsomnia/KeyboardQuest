@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlayerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rng />
+  <BASE_ACCURACY>70</BASE_ACCURACY>
+  <MAX_HP>10</MAX_HP>
+  <HP>10</HP>
+  <ATTACK>
+    <int>1</int>
+    <int>1</int>
+  </ATTACK>
+  <BASE_ATTACK>
+    <int>1</int>
+    <int>1</int>
+  </BASE_ATTACK>
+  <Accuracy>70</Accuracy>
+  <BASE_DEFENCE>0</BASE_DEFENCE>
+  <DEFENCE>0</DEFENCE>
+  <BASE_SPEED>5</BASE_SPEED>
+  <SPEED>5</SPEED>
+  <MONEY>40</MONEY>
+  <level>1</level>
+  <experience>0</experience>
+  <Weapons>
+    <Weapon>
+      <name>spear</name>
+      <price>60</price>
+      <level>0</level>
+      <Damage>
+        <int>1</int>
+        <int>3</int>
+      </Damage>
+    </Weapon>
+  </Weapons>
+  <equippedWeapon>
+    <name>spear</name>
+    <price>60</price>
+    <level>0</level>
+    <Damage>
+      <int>1</int>
+      <int>3</int>
+    </Damage>
+  </equippedWeapon>
+  <Armors />
+  <barter>20</barter>
+  <speech>20</speech>
+  <perception>20</perception>
+</PlayerData>

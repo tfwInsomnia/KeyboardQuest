@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <town>
+    <activityList>
+      <string>1-Go to the Blacksmith's Shop.</string>
+      <string>2- Go to the Tavern.</string>
+      <string>3- Check the Town Billboard.</string>
+    </activityList>
+    <blacksmith>
+      <rng />
+      <weapons>
+        <Weapon>
+          <name>dagger</name>
+          <price>40</price>
+          <level>0</level>
+          <Damage>
+            <int>2</int>
+            <int>2</int>
+          </Damage>
+        </Weapon>
+        <Weapon>
+          <name>sword</name>
+          <price>60</price>
+          <level>0</level>
+          <Damage>
+            <int>2</int>
+            <int>3</int>
+          </Damage>
+        </Weapon>
+      </weapons>
+    </blacksmith>
+  </town>
+  <shop>
+    <rng />
+    <weapons>
+      <Weapon>
+        <name>dagger</name>
+        <price>40</price>
+        <level>0</level>
+        <Damage>
+          <int>2</int>
+          <int>2</int>
+        </Damage>
+      </Weapon>
+      <Weapon>
+        <name>sword</name>
+        <price>60</price>
+        <level>0</level>
+        <Damage>
+          <int>2</int>
+          <int>3</int>
+        </Damage>
+      </Weapon>
+    </weapons>
+  </shop>
+</Game>
