@@ -1,47 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PlayerData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <rng />
-  <BASE_ACCURACY>70</BASE_ACCURACY>
+  <Weapons>
+    <Weapon>
+      <name>Rusty Dagger</name>
+      <price>35</price>
+      <description>Almost harmless...</description>
+      <level>1</level>
+      <durability>7</durability>
+      <Damage>
+        <int>1</int>
+        <int>2</int>
+      </Damage>
+    </Weapon>
+  </Weapons>
+  <miscItems />
+  <activeQuests>
+    <Quest>
+      <name>Rat Trouble</name>
+      <level>0</level>
+      <questLength>0</questLength>
+      <description>I have a giant rat in my basement and i'm too scared to kill it, can you take care of it?</description>
+      <finalEnemy>
+        <name>Giant Rat</name>
+        <ACCURACY>0</ACCURACY>
+        <BASE_ACCURACY>0</BASE_ACCURACY>
+        <MAX_HP>6</MAX_HP>
+        <HP>-1</HP>
+        <DEFENCE>0</DEFENCE>
+        <ATTACK>
+          <int>1</int>
+          <int>2</int>
+        </ATTACK>
+        <BASE_ATTACK>
+          <int>1</int>
+          <int>2</int>
+        </BASE_ATTACK>
+        <BASE_DEFENCE>0</BASE_DEFENCE>
+        <SPEED>4</SPEED>
+        <rewardExperience>0</rewardExperience>
+        <rewardMoney>0</rewardMoney>
+        <rng />
+        <level>1</level>
+        <enemySkills>
+          <Skill>
+            <defaultCooldown>0</defaultCooldown>
+            <cooldown>0</cooldown>
+            <name>Basic Attack</name>
+            <duration>0</duration>
+            <skillLevel>1</skillLevel>
+            <description>Normal attack.</description>
+            <dmgMultiplier>1</dmgMultiplier>
+            <accMultiplier>0.85</accMultiplier>
+          </Skill>
+          <Skill>
+            <defaultCooldown>0</defaultCooldown>
+            <cooldown>0</cooldown>
+            <name>Basic Attack</name>
+            <duration>0</duration>
+            <skillLevel>1</skillLevel>
+            <description>Normal attack.</description>
+            <dmgMultiplier>1</dmgMultiplier>
+            <accMultiplier>0.85</accMultiplier>
+          </Skill>
+          <Skill>
+            <defaultCooldown>0</defaultCooldown>
+            <cooldown>0</cooldown>
+            <name>Basic Attack</name>
+            <duration>0</duration>
+            <skillLevel>1</skillLevel>
+            <description>Normal attack.</description>
+            <dmgMultiplier>1</dmgMultiplier>
+            <accMultiplier>0.85</accMultiplier>
+          </Skill>
+          <Skill>
+            <defaultCooldown>0</defaultCooldown>
+            <cooldown>0</cooldown>
+            <name>Basic Attack</name>
+            <duration>0</duration>
+            <skillLevel>1</skillLevel>
+            <description>Normal attack.</description>
+            <dmgMultiplier>1</dmgMultiplier>
+            <accMultiplier>0.85</accMultiplier>
+          </Skill>
+        </enemySkills>
+      </finalEnemy>
+      <rewardExperience>10</rewardExperience>
+      <rewardMoney>20</rewardMoney>
+      <map>
+        <string>finalEnemy</string>
+      </map>
+      <rng />
+      <questCompleteDialog>Thank you,</questCompleteDialog>
+    </Quest>
+  </activeQuests>
+  <finishedQuests />
+  <equippedWeapon>
+    <name>Rusty Dagger</name>
+    <price>35</price>
+    <description>Almost harmless...</description>
+    <level>1</level>
+    <durability>7</durability>
+    <Damage>
+      <int>1</int>
+      <int>2</int>
+    </Damage>
+  </equippedWeapon>
+  <Armors>
+    <Armor>
+      <name>Paesant Clothes</name>
+      <price>50</price>
+      <description>Quite plebian.</description>
+      <level>1</level>
+      <durability>10</durability>
+      <Defence>1</Defence>
+    </Armor>
+  </Armors>
+  <equippedArmor>
+    <name>Paesant Clothes</name>
+    <price>50</price>
+    <description>Quite plebian.</description>
+    <level>1</level>
+    <durability>10</durability>
+    <Defence>1</Defence>
+  </equippedArmor>
+  <BASE_ACCURACY>14</BASE_ACCURACY>
   <MAX_HP>10</MAX_HP>
   <HP>10</HP>
-  <ATTACK>
-    <int>1</int>
-    <int>1</int>
-  </ATTACK>
   <BASE_ATTACK>
     <int>1</int>
     <int>1</int>
   </BASE_ATTACK>
-  <Accuracy>70</Accuracy>
+  <Accuracy>14</Accuracy>
   <BASE_DEFENCE>0</BASE_DEFENCE>
-  <DEFENCE>0</DEFENCE>
   <BASE_SPEED>5</BASE_SPEED>
   <SPEED>5</SPEED>
-  <MONEY>40</MONEY>
+  <MONEY>35</MONEY>
   <level>1</level>
-  <experience>0</experience>
-  <Weapons>
-    <Weapon>
-      <name>spear</name>
-      <price>60</price>
-      <level>0</level>
-      <Damage>
-        <int>1</int>
-        <int>3</int>
-      </Damage>
-    </Weapon>
-  </Weapons>
-  <equippedWeapon>
-    <name>spear</name>
-    <price>60</price>
-    <level>0</level>
-    <Damage>
-      <int>1</int>
-      <int>3</int>
-    </Damage>
-  </equippedWeapon>
-  <Armors />
+  <experience>10</experience>
   <barter>20</barter>
   <speech>20</speech>
   <perception>20</perception>
+  <nextLevel>100</nextLevel>
+  <rng />
 </PlayerData>

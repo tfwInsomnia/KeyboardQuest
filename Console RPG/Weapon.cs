@@ -6,14 +6,12 @@ using System.Text;
 namespace Console_RPG {
     public class Weapon : Item{
 
-
+        public Skill weaponSkill { get; set; } = null;
+        public string[] statBoost { get; set; } = null;
         public int[] Damage { get; set; }
-public string Display() {
-            string s = this.name;
-            s += (" Damage: " + Damage[0].ToString() +"-"+ Damage[1].ToString());
-            return s;
+        public override string Display() {
+            return $"{name}, Damage {Damage[0]}-{Damage[1]} {description} price: {price} gold";
         }
-
         public void LoadWeapon(string fileName) {
             var fileData = DataManager.Load<Weapon>(fileName);
             name = fileData.name;

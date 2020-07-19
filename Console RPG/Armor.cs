@@ -5,12 +5,14 @@ using System.Text;
 namespace Console_RPG {
     public class Armor:Item {
 
-        public int Defence { get; set; }
+        public int Defence { get; set; } = 1;
+        
+        public string[] statBoost { get; set; } = null;
+        public Skill armorSkill { get; set; } = null;
+        
 
-        public string Display() {
-            string s = name;
-            s+= ("Defence: " + Defence.ToString());
-            return s;
+        public override string Display() {
+            return $"{name} , armor {Defence}, description: {description}, price: {price} gold";
         }
     }
 }

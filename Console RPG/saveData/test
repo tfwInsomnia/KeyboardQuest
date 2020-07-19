@@ -10,47 +10,175 @@
       <rng />
       <weapons>
         <Weapon>
-          <name>dagger</name>
-          <price>40</price>
-          <level>0</level>
+          <name>Rusty Dagger</name>
+          <price>35</price>
+          <description>Almost harmless...</description>
+          <level>1</level>
+          <durability>7</durability>
+          <Damage>
+            <int>1</int>
+            <int>2</int>
+          </Damage>
+        </Weapon>
+        <Weapon>
+          <name>Hard Stick</name>
+          <price>50</price>
+          <description>Just a hard stick.</description>
+          <level>1</level>
+          <durability>10</durability>
           <Damage>
             <int>2</int>
             <int>2</int>
           </Damage>
         </Weapon>
         <Weapon>
-          <name>sword</name>
+          <name>Short Sword</name>
+          <price>90</price>
+          <description>It's a short sword.</description>
+          <level>2</level>
+          <durability>15</durability>
+          <Damage>
+            <int>2</int>
+            <int>3</int>
+          </Damage>
+        </Weapon>
+        <Weapon>
+          <name>Pitchfork</name>
           <price>60</price>
-          <level>0</level>
+          <description>Time to rebel.</description>
+          <level>1</level>
+          <durability>10</durability>
+          <Damage>
+            <int>1</int>
+            <int>3</int>
+          </Damage>
+        </Weapon>
+        <Weapon>
+          <name>Short Spear</name>
+          <price>175</price>
+          <description>Has a nice piercing thrust to it.</description>
+          <level>2</level>
+          <durability>8</durability>
+          <weaponSkill>
+            <defaultCooldown>3</defaultCooldown>
+            <cooldown>0</cooldown>
+            <name>Piercing Blow</name>
+            <duration>0</duration>
+            <skillLevel>1</skillLevel>
+            <dmgMultiplier>0.7</dmgMultiplier>
+            <accMultiplier>1.15</accMultiplier>
+          </weaponSkill>
+          <Damage>
+            <int>2</int>
+            <int>5</int>
+          </Damage>
+        </Weapon>
+        <Weapon>
+          <name>Steel Dagger</name>
+          <price>125</price>
+          <description>Not a joke.</description>
+          <level>2</level>
+          <durability>20</durability>
+          <statBoost>
+            <string>speed</string>
+            <string>1</string>
+          </statBoost>
           <Damage>
             <int>2</int>
             <int>3</int>
           </Damage>
         </Weapon>
       </weapons>
+      <armors>
+        <Armor>
+          <name>Paesant Clothes</name>
+          <price>50</price>
+          <description>Quite plebian.</description>
+          <level>1</level>
+          <durability>10</durability>
+          <Defence>1</Defence>
+        </Armor>
+        <Armor>
+          <name>Old Leather Vest</name>
+          <price>80</price>
+          <description>Grandpa used to wear something like this...</description>
+          <level>1</level>
+          <durability>10</durability>
+          <Defence>2</Defence>
+        </Armor>
+      </armors>
     </blacksmith>
+    <billboard>
+      <ArrayOfQuest>
+        <Quest>
+          <name>Rat Trouble</name>
+          <level>0</level>
+          <questLength>0</questLength>
+          <description>I have a giant rat in my basement and i'm too scared to kill it, can you take care of it?</description>
+          <finalEnemy>
+            <name>Giant Rat</name>
+            <ACCURACY>0</ACCURACY>
+            <BASE_ACCURACY>0</BASE_ACCURACY>
+            <MAX_HP>6</MAX_HP>
+            <HP>6</HP>
+            <DEFENCE>0</DEFENCE>
+            <ATTACK>
+              <int>1</int>
+              <int>2</int>
+            </ATTACK>
+            <BASE_ATTACK>
+              <int>1</int>
+              <int>2</int>
+            </BASE_ATTACK>
+            <BASE_DEFENCE>0</BASE_DEFENCE>
+            <SPEED>4</SPEED>
+            <rewardExperience>0</rewardExperience>
+            <rewardMoney>0</rewardMoney>
+            <rng />
+            <level>1</level>
+            <enemySkills>
+              <Skill>
+                <defaultCooldown>0</defaultCooldown>
+                <cooldown>0</cooldown>
+                <name>Basic Attack</name>
+                <duration>0</duration>
+                <skillLevel>1</skillLevel>
+                <description>Normal attack.</description>
+                <dmgMultiplier>1</dmgMultiplier>
+                <accMultiplier>0.85</accMultiplier>
+              </Skill>
+              <Skill>
+                <defaultCooldown>0</defaultCooldown>
+                <cooldown>0</cooldown>
+                <name>Basic Attack</name>
+                <duration>0</duration>
+                <skillLevel>1</skillLevel>
+                <description>Normal attack.</description>
+                <dmgMultiplier>1</dmgMultiplier>
+                <accMultiplier>0.85</accMultiplier>
+              </Skill>
+              <Skill>
+                <defaultCooldown>0</defaultCooldown>
+                <cooldown>0</cooldown>
+                <name>Basic Attack</name>
+                <duration>0</duration>
+                <skillLevel>1</skillLevel>
+                <description>Normal attack.</description>
+                <dmgMultiplier>1</dmgMultiplier>
+                <accMultiplier>0.85</accMultiplier>
+              </Skill>
+            </enemySkills>
+          </finalEnemy>
+          <rewardExperience>10</rewardExperience>
+          <rewardMoney>20</rewardMoney>
+          <map>
+            <string>finalEnemy</string>
+          </map>
+          <rng />
+          <questCompleteDialog>Thank you,</questCompleteDialog>
+        </Quest>
+      </ArrayOfQuest>
+    </billboard>
+    <exitGame>true</exitGame>
   </town>
-  <shop>
-    <rng />
-    <weapons>
-      <Weapon>
-        <name>dagger</name>
-        <price>40</price>
-        <level>0</level>
-        <Damage>
-          <int>2</int>
-          <int>2</int>
-        </Damage>
-      </Weapon>
-      <Weapon>
-        <name>sword</name>
-        <price>60</price>
-        <level>0</level>
-        <Damage>
-          <int>2</int>
-          <int>3</int>
-        </Damage>
-      </Weapon>
-    </weapons>
-  </shop>
 </Game>

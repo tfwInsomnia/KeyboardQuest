@@ -7,17 +7,14 @@ namespace Console_RPG {
                 string basePath = @"..\..\..\saveData\";
 
             Game test= new Game();
-
-            Player.LoadPlayer(basePath + "player");
-
-            test.LoadGame(basePath + "test");
-            
-            test.town.TownLoop();
-
-            Console.WriteLine("Saving the progress....");
+            //test.LoadGame(basePath + "test");
+            var pd = new PlayerData();
+            pd.LoadPlayerData(basePath + "player");
+test.town.TownLoop();
             DataManager.Save<Game>(basePath + "test", test);
-            Player.SavePlayerData(basePath + "player");
-            Console.WriteLine("done");
+            pd.SavePlayerData();
+            DataManager.Save<PlayerData>(basePath+"player", pd);
+        
         }
         
 
